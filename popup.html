@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 250px; padding: 10px; font-family: Arial, sans-serif; }
+    button { width: 100%; padding: 8px; margin-top: 10px; cursor: pointer; }
+    input { width: calc(100% - 16px); padding: 8px; margin-top: 10px; }
+    .status { margin-top: 10px; font-size: 12px; color: gray; text-align: center; }
+  </style>
+</head>
+<body>
+  <h3 style="margin-top: 0;">Автоматизатор</h3>
+  
+  <button id="recordBtn">🔴 Начать запись</button>
+  
+  <input type="number" id="repeatCount" placeholder="Сколько раз повторить?" min="1" value="1">
+  <button id="playBtn">▶️ Начать повторы</button>
+
+  <div id="status" class="status">Готов к работе</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
